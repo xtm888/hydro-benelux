@@ -15,25 +15,17 @@
 
     <title>Hydro Benelux – Toonaangevende PE & PP Pijpleidingfabrikant | Benelux Regio</title>
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="../images/logo/logo.png">
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
 </head>
 <body>
 
-    <!-- ===== HEADER ===== -->
     <header id="header">
         <div class="header-container">
             <a href="index.html" class="logo">
@@ -42,17 +34,9 @@
 
             <nav class="main-nav" id="mainNav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="pages/about.html" class="nav-link">Over Ons</a></li>
-                    <li class="nav-item"><a href="pages/products.html" class="nav-link">Producten</a></li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle">Downloads</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="pages/brochures.html">Brochures</a></li>
-                            <li><a href="pages/certificates.html">Certificaten</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a href="pages/news.html" class="nav-link">Nieuws</a></li>
-                    <li class="nav-item"><a href="pages/contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="brochures.html" class="nav-link">Brochures</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li><!-- Fixed nav -->
                 </ul>
 
                 <div class="language-selector">
@@ -64,7 +48,7 @@
                 </div>
             </nav>
 
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Mobiel menu openen">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobiel menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -72,20 +56,26 @@
         </div>
     </header>
 
-    <!-- ===== HERO SECTION ===== -->
     <section class="hero">
-        <div class="hero-video-container">
-            <iframe
-                src="https://www.youtube.com/embed/R7b9-m_EM2s?autoplay=1&mute=1&start=0&end=116&controls=0&showinfo=0&rel=0&modestbranding=1"
-                title="Hydro Benelux Bedrijfsvideo"
-                frameborder="0"
-                allow="autoplay; encrypted-media"
-                allowfullscreen>
-            </iframe>
+        <div class="hero-video-container" id="heroVideoContainer">
+            <video id="heroVideo" autoplay muted loop playsinline preload="metadata" poster="../images/hero/hero-main.png">
+                <source src="../images/hero-video.mp4" type="video/mp4">
+            </video>
+            <div class="video-loading-spinner">
+                <div class="spinner"></div>
+            </div>
         </div>
         <div class="hero-content">
-            <h1>ONGEËVENAARDE EUROPESE NORMEN VOOR PIJPLEIDING PRECISIE</h1>
-            <p>Toonaangevend in de Benelux met Hoogwaardige Pijpleidingoplossingen</p>
+            <h1>Premium Pijpleidingoplossingen voor Moderne Infrastructuur</h1>
+            <p>35+ Jaar Technische Excellentie in de Benelux Regio</p>
+            <div class="hero-buttons">
+                <a href="brochures.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-book"></i> Bekijk Producten
+                </a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-phone"></i> Offerte Aanvragen
+                </a>
+            </div>
             <div class="hero-social">
                 <a href="https://www.linkedin.com/company/hydrobenelux" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://www.facebook.com/hydrobenelux" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -94,299 +84,220 @@
         </div>
     </section>
 
-    <!-- ===== ABOUT US SECTION ===== -->
     <section id="about" class="section-light">
         <div class="container">
-            <h2 class="section-title">Over Ons</h2>
+            <h2 class="section-title"><i class="fas fa-building"></i> Over Ons</h2>
+            <p class="section-subtitle">35+ Jaar Europese Excellentie in Pijpleidingoplossingen</p>
 
             <div class="row">
                 <div class="col-2">
-                    <img src="../images/hero/hero-main.png" alt="Pijpleiding Installatie" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                    <img src="../images/hero/hero-main.png" alt="Pijpleiding Installatie" style="width: 100%; border-radius: 16px; box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08); margin-top: 20px;">
                 </div>
 
                 <div class="col-2">
                     <p>Hydro Benelux is een exportgericht Benelux-bedrijf voor de productie van PE (polyethyleen) en PP (polypropyleen) buizen.</p>
 
-                    <p>Gevestigd in Brussel, België, werd Hydro Benelux opgericht in 1990 als een fabriek voor de productie van gereedschappen en elementen van spuitgegoten plastic. Sindsdien is het uitgegroeid tot een van de toonaangevende fabrikanten in de regio.</p>
+                    <p>Gevestigd in Brussel, België, werd Hydro Benelux opgericht in 1990 als fabriek voor de productie van gereedschappen en elementen van spuitgegoten kunststof. Sindsdien is het uitgegroeid tot een van de toonaangevende fabrikanten in de regio met meer dan 35 jaar ervaring.</p>
 
-                    <p>Na een succesvolle start, ondersteund door ervaring opgedaan met succesvol gerealiseerde projecten in België, Nederland en Luxemburg, is ons bedrijf vandaag exportgericht en wordt 95% van de producten geëxporteerd naar internationale markten in heel Europa en daarbuiten.</p>
+                    <p>Na een succesvolle start, ondersteund door ervaring opgedaan met succesvol gerealiseerde projecten in België, Nederland en Luxemburg, is ons bedrijf vandaag exportgericht en wordt 95% van onze producten geëxporteerd naar internationale markten in heel Europa en daarbuiten.</p>
+                </div>
+            </div>
 
-                    <a href="pages/about.html" class="btn btn-secondary mt-3">Lees Meer</a>
+            <div class="about-highlights">
+                <div class="highlight-box">
+                    <i class="fas fa-award"></i>
+                    <h3>Onze Missie</h3>
+                    <p>Het leveren van hoogwaardige pijpleidingoplossingen die voldoen aan de hoogste Europese normen, met behoud van duurzame productieprocessen.</p>
+                </div>
+                <div class="highlight-box">
+                    <i class="fas fa-eye"></i>
+                    <h3>Onze Visie</h3>
+                    <p>De meest vertrouwde partner in pijpleidingsystemen in de Benelux-regio zijn, bekend om innovatie, kwaliteit en klantgerichte oplossingen.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== STATISTICS BAR ===== -->
-    <section class="stats-section">
-        <div class="stats-container">
-            <div class="stat-item">
-                <span class="stat-number" data-count="35">0</span>
-                <span class="stat-label">Jaar</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number" data-count="9682">0</span>
-                <span class="stat-label">Producten</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number" data-count="3150">0</span>
-                <span class="stat-label">Projecten</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number" data-count="210">0</span>
-                <span class="stat-label">Medewerkers</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">€52M+</span>
-                <span class="stat-label">Omzet</span>
-            </div>
-        </div>
-    </section>
 
-    <!-- ===== PRODUCTS SECTION ===== -->
     <section id="products">
         <div class="container">
-            <h2 class="section-title">Producten</h2>
-            <p class="section-subtitle">Wereldwijde Toepassingen in Diverse Industrieën en Nutsvoorzieningen</p>
+            <h2 class="section-title"><i class="fas fa-industry"></i> Producten</h2>
+            <p class="section-subtitle">Wereldwijde Toepassingen in Diverse Industrieën en Nutsbedrijven</p>
 
             <div class="products-grid">
-                <a href="pages/water-supply.html" class="product-card">
-                    <img src="../images/products/infrastructure.jpg" alt="Watervoorzieningssystemen">
+                <a href="brochures.html#ductile-iron" class="product-card">
+                    <span class="badge iso">ISO 9001:2015</span>
+                    <img src="../images/products/infrastructure.jpg" alt="Gietijzeren Systemen">
                     <div class="product-overlay">
-                        <h3 class="product-title">WATERVOORZIENINGSSYSTEMEN</h3>
+                        <h3 class="product-title">GIETIJZEREN SYSTEMEN</h3>
+                        <p class="product-subtitle">Hoogwaardige pijpleidingoplossingen</p>
+                        <i class="fas fa-arrow-right"></i>
                     </div>
                 </a>
 
-                <a href="pages/sewerage-systems.html" class="product-card">
-                    <img src="../images/products/infrastructure.jpg" alt="Rioleringssystemen">
+                <a href="brochures.html#pumps" class="product-card">
+                    <span class="badge ce">CE Marked</span>
+                    <img src="../images/products/infrastructure.jpg" alt="Pompsystemen">
                     <div class="product-overlay">
-                        <h3 class="product-title">RIOLERINGSSYSTEMEN</h3>
+                        <h3 class="product-title">POMPSYSTEMEN</h3>
+                        <p class="product-subtitle">Efficiënte centrifugaaloplossingen</p>
+                        <i class="fas fa-arrow-right"></i>
                     </div>
                 </a>
 
-                <a href="pages/gas-pipeline.html" class="product-card">
-                    <img src="../images/products/infrastructure.jpg" alt="Gaspijpleidingsystemen">
+                <a href="brochures.html#valves" class="product-card">
+                    <span class="badge kiwa">KIWA Approved</span>
+                    <img src="../images/products/infrastructure.jpg" alt="Klepoplossingen">
                     <div class="product-overlay">
-                        <h3 class="product-title">GASPIJPLEIDINGSYSTEEM</h3>
+                        <h3 class="product-title">KLEPOPLOSSINGEN</h3>
+                        <p class="product-subtitle">Precisie stroomregeling</p>
+                        <i class="fas fa-arrow-right"></i>
                     </div>
                 </a>
 
-                <a href="pages/cable-protection.html" class="product-card">
-                    <img src="../images/products/infrastructure.jpg" alt="Kabelbescherming">
+                <a href="brochures.html#pipeline" class="product-card">
+                    <span class="badge din">EN 1555</span>
+                    <img src="../images/products/infrastructure.jpg" alt="PE/PP Pijpleidingsystemen">
                     <div class="product-overlay">
-                        <h3 class="product-title">KABELBESCHERMING</h3>
+                        <h3 class="product-title">PE/PP PIJPLEIDINGSYSTEMEN</h3>
+                        <p class="product-subtitle">Moderne polymeertechnologie</p>
+                        <i class="fas fa-arrow-right"></i>
                     </div>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- ===== CERTIFICATIONS BAR ===== -->
-    <section class="certifications-section">
-        <div class="certifications-slider">
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">IGQ+</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">DVGW</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">IQNet</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">ME3</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">BCR</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">EXACT</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">BENOR</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">KIWA</span></div>
-            <!-- Duplicate for seamless loop -->
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">IGQ+</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">DVGW</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">IQNet</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">ME3</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">BCR</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">EXACT</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">BENOR</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">KIWA</span></div>
-        </div>
-    </section>
-
-    <!-- ===== NEWS SECTION ===== -->
-    <section id="news" class="section-light">
-        <div class="container">
-            <h2 class="section-title">Nieuws</h2>
-
-            <div class="news-grid">
-                <article class="news-card">
-                    <img src="../images/logo/logo.png" alt="Bedrijfsvideo 2023">
-                    <div class="news-card-body">
-                        <p class="news-date">Oktober 2023</p>
-                        <h3>Bedrijfsvideo 2023</h3>
-                        <p>Bekijk onze nieuwste bedrijfspresentatie waarin innovatie en groei bij Hydro Benelux worden getoond.</p>
-                        <a href="pages/news-article.html" class="btn btn-outline">Lees Meer</a>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <img src="../images/hero/hero-about.jpg" alt="Nieuwe Productielijn">
-                    <div class="news-card-body">
-                        <p class="news-date">September 2023</p>
-                        <h3>Nieuwe Productielijn Gelanceerd</h3>
-                        <p>Ultramoderne energiezuinige productielijn verhoogt capaciteit met 30%.</p>
-                        <a href="pages/news-article.html" class="btn btn-outline">Lees Meer</a>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <img src="../images/hero/hero-water.png" alt="Energie-efficiëntie">
-                    <div class="news-card-body">
-                        <p class="news-date">Augustus 2023</p>
-                        <h3>Energie-efficiëntie Initiatief</h3>
-                        <p>Hydro Benelux verbindt zich tot klimaatneutrale operaties tegen 2030.</p>
-                        <a href="pages/news-article.html" class="btn btn-outline">Lees Meer</a>
-                    </div>
-                </article>
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2>Klaar om Uw Infrastructuur te Upgraden?</h2>
+            <p>Onze pijpleidingexperts helpen u de perfecte oplossing voor uw project te vinden</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-envelope"></i> Contacteer Onze Experts
+                </a>
+                <a href="brochures.html" class="btn btn-secondary btn-lg">
+                    <i class="fas fa-download"></i> Download Catalogi
+                </a>
             </div>
-
-            <div class="text-center mt-4">
-                <a href="pages/news.html" class="btn btn-primary">Bekijk Al Het Nieuws</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== TESTIMONIALS SECTION ===== -->
-    <section class="testimonials-section">
-        <div class="testimonials-slider">
-            <div class="testimonial-slide active">
-                <span class="quote-open">"</span>
-                <p class="testimonial-text">
-                    Als uw langetermijnpartner zijn wij zeer tevreden om met u en uw bedrijf samen te werken. Door de jaren heen hebben wij zeer goede service, uitstekende productkwaliteit, snelle en deskundige reacties van Hydro Benelux ontvangen. Alle medewerkers zijn responsief, deskundig en goed thuis in de producten die u produceert. Wij krijgen altijd het juiste advies voor het kiezen van het juiste product. Wij bevelen Hydro Benelux ten zeerste aan bij al onze partners en klanten.
+            <div class="contact-quick">
+                <p>
+                    <i class="fas fa-phone"></i> Bel ons: <a href="tel:+3225551234">+32 2 555 1234</a>
+                    <span class="separator">|</span>
+                    <i class="fas fa-envelope"></i> Email: <a href="mailto:info@hydrobenelux.eu">info@hydrobenelux.eu</a>
                 </p>
-                <span class="quote-close">"</span>
-                <div class="testimonial-author">
-                    <p class="author-name">Johan De Vries</p>
-                    <p class="author-position">Projectmanager, AquaNet NL</p>
-                </div>
             </div>
-
-            <div class="testimonial-slide">
-                <span class="quote-open">"</span>
-                <p class="testimonial-text">
-                    Samenwerken met Hydro Benelux is een echt positieve ervaring geweest. Hun professionaliteit, aandacht voor detail en toewijding aan het leveren van hoogwaardige producten en diensten overtreffen consequent onze verwachtingen. De expertise en responsiviteit van het team maken elk project soepel en efficiënt, en hun toewijding aan klanttevredenheid is duidelijk in alles wat ze doen. Wij waarderen ons partnerschap enorm en bevelen Hydro Benelux ten zeerste aan bij iedereen die op zoek is naar betrouwbare producten en oplossingen.
-                </p>
-                <span class="quote-close">"</span>
-                <div class="testimonial-author">
-                    <p class="author-name">Sophie Maes</p>
-                    <p class="author-position">Infrastructuurdirecteur, InfraBuild België</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="testimonial-controls">
-            <button class="testimonial-dot active" data-slide="0"></button>
-            <button class="testimonial-dot" data-slide="1"></button>
         </div>
     </section>
 
-    <!-- ===== CONTACT CTA SECTION ===== -->
-    <section class="section-dark text-center" style="padding: 100px 0;">
+        <footer style="background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%); color: white; padding: 80px 0 0 0;">
         <div class="container">
-            <h2 style="color: white; margin-bottom: 32px;">Neem Contact Op: Verbind Vandaag Met Ons!</h2>
-            <a href="pages/contact.html" class="btn btn-primary btn-lg">Contacteer Ons</a>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer>
-        <div class="footer-accent"></div>
-        <div class="footer-container">
-            <div class="footer-content">
-                <!-- Column 1: Company Info -->
-                <div class="footer-column">
-                    <img src="../images/logo/logo.png" alt="Hydro Benelux" class="footer-logo">
-                    <div class="footer-info">
-                        <p><strong>Hydro Benelux Hoofdkantoor</strong></p>
-                        <p>Avenue de l'Industrie 12<br>1000 Brussel, België</p>
-                        <p class="footer-phone">+32 2 555 1234</p>
-                        <p class="footer-phone">+32 3 555 5678</p>
-                        <p class="footer-phone">+31 20 555 9012</p>
-                        <p class="footer-phone">+352 XX XXX XXX</p>
-                        <p class="footer-phone">+32 2 555 3456</p>
-                        <p><a href="mailto:info@hydrobenelux.eu" class="footer-email">info@hydrobenelux.eu</a></p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; margin-bottom: 50px;">
+                <div style="text-align: left;">
+                    <img src="../images/logo/logo.png" alt="Hydro Benelux" style="height: 70px; margin-bottom: 25px; display: block;">
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.6; font-size: 14px;">
+                        Toonaangevende PE & PP pijpleidingfabrikant in de Benelux-regio. 35+ jaar Europese excellentie in infrastructuuroplossingen.
+                    </p>
+                </div>
+                <div style="text-align: left;">
+                    <h4 style="margin-bottom: 20px; font-size: 16px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: white;">Contact</h4>
+                    <div style="color: rgba(255,255,255,0.8); font-size: 14px; line-height: 2;">
+                        <p style="margin: 8px 0;">
+                            <i class="fas fa-map-marker-alt" style="width: 18px; color: #E63946;"></i>
+                            Avenue de l'Industrie 12<br>
+                            <span style="margin-left: 18px;">1000 Brussel, België</span>
+                        </p>
+                        <p style="margin: 8px 0;">
+                            <i class="fas fa-phone" style="width: 18px; color: #E63946;"></i>
+                            <a href="tel:+3225551234" style="color: rgba(255,255,255,0.8); text-decoration: none;">+32 2 555 1234</a>
+                        </p>
+                        <p style="margin: 8px 0;">
+                            <i class="fas fa-envelope" style="width: 18px; color: #E63946;"></i>
+                            <a href="mailto:info@hydrobenelux.eu" style="color: rgba(255,255,255,0.8); text-decoration: none;">info@hydrobenelux.eu</a>
+                        </p>
                     </div>
                 </div>
-
-                <!-- Column 2: Quick Links -->
-                <div class="footer-column">
-                    <h4>Snelle Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="pages/about.html">Over Ons</a></li>
-                        <li><a href="pages/products.html">Producten</a></li>
-                        <li><a href="pages/news.html">Nieuws</a></li>
-                        <li><a href="pages/contact.html">Contact</a></li>
-                    </ul>
+                <div style="text-align: left;">
+                    <h4 style="margin-bottom: 20px; font-size: 16px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: white;">Snelle Links</h4>
+                    <div style="color: rgba(255,255,255,0.8); font-size: 14px; line-height: 2.2;">
+                        <p style="margin: 5px 0;"><a href="index.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">→ Home</a></p>
+                        <p style="margin: 5px 0;"><a href="brochures.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">→ Brochures</a></p>
+                        <p style="margin: 5px 0;"><a href="index.html#products" style="color: rgba(255,255,255,0.8); text-decoration: none;">→ Producten</a></p>
+                        <p style="margin: 5px 0;"><a href="contact.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">→ Contact</a></p>
+                    </div>
                 </div>
-
-                <!-- Column 3: Downloads & Legal -->
-                <div class="footer-column">
-                    <h4>Bronnen</h4>
-                    <ul class="footer-links">
-                        <li><a href="pages/brochures.html">Brochures</a></li>
-                        <li><a href="pages/certificates.html">Certificaten</a></li>
-                        <li><a href="pages/privacy-policy.html">Privacybeleid</a></li>
-                        <li><a href="pages/contact.html">Klantenservice</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 4: Social Media -->
-                <div class="footer-column">
-                    <h4>Volg Ons</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/hydrobenelux" target="_blank" class="social-link" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/hydrobenelux" target="_blank" class="social-link" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/hydrobenelux" target="_blank" class="social-link" aria-label="LinkedIn">
+                <div style="text-align: left;">
+                    <h4 style="margin-bottom: 20px; font-size: 16px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: white;">Volg Ons</h4>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="https://www.linkedin.com/company/hydrobenelux" target="_blank" style="width: 45px; height: 45px; background: rgba(255,255,255,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; text-decoration: none;" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
+                        <a href="https://www.facebook.com/hydrobenelux" target="_blank" style="width: 45px; height: 45px; background: rgba(255,255,255,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; text-decoration: none;" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/hydrobenelux" target="_blank" style="width: 45px; height: 45px; background: rgba(255,255,255,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; text-decoration: none;" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
+                    <p style="margin-top: 20px; color: rgba(255,255,255,0.6); font-size: 13px; line-height: 1.6;">
+                        Blijf op de hoogte van onze nieuwste producten en branchenieuws.
+                    </p>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 Hydro Benelux. Alle rechten voorbehouden.</p>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding: 25px 0; text-align: center; background: rgba(0,0,0,0.2);">
+                <p style="margin: 0; font-size: 13px; color: rgba(255,255,255,0.6);">
+                    &copy; 2025 Hydro Benelux. Alle rechten voorbehouden. | Ontworpen voor excellentie in pijpleidingoplossingen.
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- ===== BACK TO TOP BUTTON ===== -->
     <button class="back-to-top" id="backToTop" aria-label="Terug naar boven">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- JavaScript -->
     <script src="../js/main.js"></script>
 
-    <!-- Hero Video Fallback Script -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const heroVideo = document.querySelector('.hero-video-container video');
+        const heroVideo = document.getElementById('heroVideo');
+        const heroVideoContainer = document.getElementById('heroVideoContainer');
+        const videoSpinner = document.querySelector('.video-loading-spinner');
 
-            if (heroVideo) {
-                // Error fallback to YouTube
-                heroVideo.addEventListener('error', function() {
-                    console.log('Video failed to load, using YouTube fallback');
-                });
+        if (heroVideo) {
+            heroVideo.addEventListener('canplay', function() {
+                if (videoSpinner) {
+                    videoSpinner.classList.add('hidden');
+                }
+            });
 
-                // Stop video at 1:56 (116 seconds)
-                heroVideo.addEventListener('timeupdate', function() {
-                    if (heroVideo.currentTime >= 116) {
-                        heroVideo.pause();
-                        heroVideo.currentTime = 116;
-                    }
-                });
+            heroVideo.addEventListener('error', function() {
+                if (videoSpinner) {
+                    videoSpinner.classList.add('hidden');
+                }
+                heroVideoContainer.innerHTML = `
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/R7b9-m_EM2s?autoplay=1&mute=1&start=0&end=116&controls=0"
+                        title="Hydro Benelux Corporate Video"
+                        frameborder="0"
+                        allow="autoplay"
+                        style="position: absolute; top: 50%; left: 50%; width: 100vw; height: 56.25vw; min-height: 100vh; min-width: 177.77vh; transform: translate(-50%, -50%); pointer-events: none;">
+                    </iframe>
+                `;
+            });
 
-                // Attempt to play
-                heroVideo.play().catch(function(error) {
-                    console.log('Autoplay prevented:', error);
-                });
-            }
-        });
+            heroVideo.addEventListener('timeupdate', function() {
+                if (heroVideo.currentTime >= 116) {
+                    heroVideo.pause();
+                    heroVideo.currentTime = 116;
+                }
+            });
+
+            heroVideo.play().catch(function() {
+                document.addEventListener('click', function() {
+                    heroVideo.play().catch(function() {});
+                }, { once: true });
+            });
+        }
     </script>
 </body>
 </html>

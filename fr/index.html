@@ -3,37 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hydro Benelux fournit des tuyaux certifiés en polyéthylène et polypropylène pour les infrastructures d'eau, d'égouts, de gaz et de câbles en Belgique, aux Pays-Bas et au Luxembourg. Plus de 35 ans d'excellence européenne.">
-    <meta name="keywords" content="tuyaux PE Benelux, tuyaux PP Belgique, tuyaux d'approvisionnement en eau Pays-Bas, systèmes de canalisations de gaz Luxembourg, tuyaux d'infrastructure Europe">
+    <meta name="description" content="Hydro Benelux fournit des tuyaux certifiés en polyéthylène et polypropylène pour l'eau, l'assainissement, le gaz et l'infrastructure de câbles en Belgique, Pays-Bas et Luxembourg. Plus de 35 ans d'excellence européenne.">
+    <meta name="keywords" content="tuyaux PE Benelux, tuyaux PP Belgique, tuyaux d'approvisionnement en eau Pays-Bas, systèmes de gazoducs Luxembourg, tuyaux d'infrastructure Europe">
     <meta name="author" content="Hydro Benelux">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Hydro Benelux – Premier fabricant de canalisations PE & PP">
-    <meta property="og:description" content="Excellence européenne en solutions de canalisations pour les infrastructures">
+    <meta property="og:title" content="Hydro Benelux – Premier Fabricant de Canalisations PE & PP">
+    <meta property="og:description" content="Excellence européenne en solutions de canalisations pour l'infrastructure">
     <meta property="og:image" content="../images/logo/logo.png">
 
-    <title>Hydro Benelux – Premier fabricant de canalisations PE & PP | Région Benelux</title>
+    <title>Hydro Benelux – Premier Fabricant de Canalisations PE & PP | Région Benelux</title>
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="../images/logo/logo.png">
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
 </head>
 <body>
 
-    <!-- ===== HEADER ===== -->
     <header id="header">
         <div class="header-container">
             <a href="index.html" class="logo">
@@ -42,17 +34,9 @@
 
             <nav class="main-nav" id="mainNav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="pages/about.html" class="nav-link">À Propos</a></li>
-                    <li class="nav-item"><a href="pages/products.html" class="nav-link">Produits</a></li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle">Téléchargements</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="pages/brochures.html">Brochures</a></li>
-                            <li><a href="pages/certificates.html">Certificats</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a href="pages/news.html" class="nav-link">Actualités</a></li>
-                    <li class="nav-item"><a href="pages/contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Accueil</a></li>
+                    <li class="nav-item"><a href="brochures.html" class="nav-link">Brochures</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li><!-- Fixed nav -->
                 </ul>
 
                 <div class="language-selector">
@@ -64,7 +48,7 @@
                 </div>
             </nav>
 
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Basculer le menu mobile">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu mobile">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -72,20 +56,26 @@
         </div>
     </header>
 
-    <!-- ===== HERO SECTION ===== -->
     <section class="hero">
-        <div class="hero-video-container">
-            <iframe
-                src="https://www.youtube.com/embed/R7b9-m_EM2s?autoplay=1&mute=1&start=0&end=116&controls=0&showinfo=0&rel=0&modestbranding=1"
-                title="Vidéo Corporate Hydro Benelux"
-                frameborder="0"
-                allow="autoplay; encrypted-media"
-                allowfullscreen>
-            </iframe>
+        <div class="hero-video-container" id="heroVideoContainer">
+            <video id="heroVideo" autoplay muted loop playsinline preload="metadata" poster="../images/hero/hero-main.png">
+                <source src="../images/hero-video.mp4" type="video/mp4">
+            </video>
+            <div class="video-loading-spinner">
+                <div class="spinner"></div>
+            </div>
         </div>
         <div class="hero-content">
-            <h1>NORMES EUROPÉENNES INÉGALÉES POUR LA PRÉCISION DES CANALISATIONS</h1>
-            <p>Leader au Benelux en solutions de canalisations haute performance</p>
+            <h1>Solutions de Canalisations Premium pour Infrastructure Moderne</h1>
+            <p>35+ Ans d'Excellence Technique dans la Région Benelux</p>
+            <div class="hero-buttons">
+                <a href="brochures.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-book"></i> Voir les Produits
+                </a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-phone"></i> Demander un Devis
+                </a>
+            </div>
             <div class="hero-social">
                 <a href="https://www.linkedin.com/company/hydrobenelux" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://www.facebook.com/hydrobenelux" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -94,299 +84,220 @@
         </div>
     </section>
 
-    <!-- ===== ABOUT US SECTION ===== -->
     <section id="about" class="section-light">
         <div class="container">
-            <h2 class="section-title">À Propos</h2>
+            <h2 class="section-title"><i class="fas fa-building"></i> À Propos de Nous</h2>
+            <p class="section-subtitle">Plus de 35 Ans d'Excellence Européenne en Solutions de Canalisations</p>
 
             <div class="row">
                 <div class="col-2">
-                    <img src="../images/hero/hero-main.png" alt="Installation de canalisations" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                    <img src="../images/hero/hero-main.png" alt="Installation de Canalisation" style="width: 100%; border-radius: 16px; box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08); margin-top: 20px;">
                 </div>
 
                 <div class="col-2">
-                    <p>Hydro Benelux est une entreprise du Benelux orientée vers l'exportation, spécialisée dans la production de tuyaux PE (polyéthylène) et PP (polypropylène).</p>
+                    <p>Hydro Benelux est une entreprise Benelux orientée vers l'export, spécialisée dans la production de tuyaux en PE (polyéthylène) et PP (polypropylène).</p>
 
-                    <p>Située à Bruxelles, en Belgique, Hydro Benelux a été fondée en 1990 en tant qu'usine de production d'outils et d'éléments en plastique moulé par injection. Depuis lors, elle est devenue l'un des principaux fabricants de la région.</p>
+                    <p>Située à Bruxelles, en Belgique, Hydro Benelux a été fondée en 1990 en tant qu'usine de production d'outils et d'éléments en plastique moulé par injection. Depuis lors, elle est devenue l'un des principaux fabricants de la région avec plus de 35 ans d'expérience.</p>
 
-                    <p>Suite à un démarrage réussi grâce à l'expérience acquise lors de projets réalisés avec succès en Belgique, aux Pays-Bas et au Luxembourg, notre entreprise est aujourd'hui orientée vers l'exportation, et 95% de ses produits sont exportés vers les marchés internationaux en Europe et au-delà.</p>
+                    <p>Après un démarrage réussi grâce à l'expérience acquise lors de projets menés avec succès en Belgique, aux Pays-Bas et au Luxembourg, notre entreprise est aujourd'hui orientée vers l'export, et 95 % de nos produits sont exportés vers les marchés internationaux à travers l'Europe et au-delà.</p>
+                </div>
+            </div>
 
-                    <a href="pages/about.html" class="btn btn-secondary mt-3">En Savoir Plus</a>
+            <div class="about-highlights">
+                <div class="highlight-box">
+                    <i class="fas fa-award"></i>
+                    <h3>Notre Mission</h3>
+                    <p>Fournir des solutions de canalisations haute performance qui répondent aux normes européennes les plus élevées tout en maintenant des pratiques de fabrication durables.</p>
+                </div>
+                <div class="highlight-box">
+                    <i class="fas fa-eye"></i>
+                    <h3>Notre Vision</h3>
+                    <p>Être le partenaire le plus fiable en systèmes de canalisations dans la région du Benelux, reconnu pour l'innovation, la qualité et les solutions centrées sur le client.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== STATISTICS BAR ===== -->
-    <section class="stats-section">
-        <div class="stats-container">
-            <div class="stat-item">
-                <span class="stat-number" data-count="35">0</span>
-                <span class="stat-label">Années</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number" data-count="9682">0</span>
-                <span class="stat-label">Produits</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number" data-count="3150">0</span>
-                <span class="stat-label">Projets</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number" data-count="210">0</span>
-                <span class="stat-label">Employés</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">€52M+</span>
-                <span class="stat-label">Chiffre d'affaires</span>
-            </div>
-        </div>
-    </section>
 
-    <!-- ===== PRODUCTS SECTION ===== -->
     <section id="products">
         <div class="container">
-            <h2 class="section-title">Produits</h2>
-            <p class="section-subtitle">Applications mondiales dans tous les secteurs et services publics</p>
+            <h2 class="section-title"><i class="fas fa-industry"></i> Produits</h2>
+            <p class="section-subtitle">Applications Mondiales dans Diverses Industries et Services Publics</p>
 
             <div class="products-grid">
-                <a href="pages/water-supply.html" class="product-card">
-                    <img src="../images/products/infrastructure.jpg" alt="Systèmes d'approvisionnement en eau">
+                <a href="brochures.html#ductile-iron" class="product-card">
+                    <span class="badge iso">ISO 9001:2015</span>
+                    <img src="../images/products/infrastructure.jpg" alt="Systèmes en Fonte Ductile">
                     <div class="product-overlay">
-                        <h3 class="product-title">SYSTÈMES D'APPROVISIONNEMENT EN EAU</h3>
+                        <h3 class="product-title">SYSTÈMES EN FONTE DUCTILE</h3>
+                        <p class="product-subtitle">Solutions de canalisations haute résistance</p>
+                        <i class="fas fa-arrow-right"></i>
                     </div>
                 </a>
 
-                <a href="pages/sewerage-systems.html" class="product-card">
-                    <img src="../images/products/infrastructure.jpg" alt="Systèmes d'égouts">
+                <a href="brochures.html#pumps" class="product-card">
+                    <span class="badge ce">Marquage CE</span>
+                    <img src="../images/products/infrastructure.jpg" alt="Systèmes de Pompage">
                     <div class="product-overlay">
-                        <h3 class="product-title">SYSTÈMES D'ÉGOUTS</h3>
+                        <h3 class="product-title">SYSTÈMES DE POMPAGE</h3>
+                        <p class="product-subtitle">Solutions centrifuges efficaces</p>
+                        <i class="fas fa-arrow-right"></i>
                     </div>
                 </a>
 
-                <a href="pages/gas-pipeline.html" class="product-card">
-                    <img src="../images/products/infrastructure.jpg" alt="Systèmes de canalisations de gaz">
+                <a href="brochures.html#valves" class="product-card">
+                    <span class="badge kiwa">Approuvé KIWA</span>
+                    <img src="../images/products/infrastructure.jpg" alt="Solutions de Vannes">
                     <div class="product-overlay">
-                        <h3 class="product-title">SYSTÈME DE CANALISATION DE GAZ</h3>
+                        <h3 class="product-title">SOLUTIONS DE VANNES</h3>
+                        <p class="product-subtitle">Contrôle de débit de précision</p>
+                        <i class="fas fa-arrow-right"></i>
                     </div>
                 </a>
 
-                <a href="pages/cable-protection.html" class="product-card">
-                    <img src="../images/products/infrastructure.jpg" alt="Protection de câbles">
+                <a href="brochures.html#pipeline" class="product-card">
+                    <span class="badge din">EN 1555</span>
+                    <img src="../images/products/infrastructure.jpg" alt="Systèmes de Canalisations PE/PP">
                     <div class="product-overlay">
-                        <h3 class="product-title">PROTECTION DE CÂBLES</h3>
+                        <h3 class="product-title">SYSTÈMES DE CANALISATIONS PE/PP</h3>
+                        <p class="product-subtitle">Technologie polymère moderne</p>
+                        <i class="fas fa-arrow-right"></i>
                     </div>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- ===== CERTIFICATIONS BAR ===== -->
-    <section class="certifications-section">
-        <div class="certifications-slider">
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">IGQ+</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">DVGW</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">IQNet</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">ME3</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">BCR</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">EXACT</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">BENOR</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">KIWA</span></div>
-            <!-- Duplicate for seamless loop -->
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">IGQ+</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">DVGW</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">IQNet</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">ME3</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">BCR</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">EXACT</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">BENOR</span></div>
-            <div class="cert-logo"><span style="color: white; font-size: 32px; font-weight: bold;">KIWA</span></div>
-        </div>
-    </section>
-
-    <!-- ===== NEWS SECTION ===== -->
-    <section id="news" class="section-light">
-        <div class="container">
-            <h2 class="section-title">Actualités</h2>
-
-            <div class="news-grid">
-                <article class="news-card">
-                    <img src="../images/logo/logo.png" alt="Vidéo Corporate 2023">
-                    <div class="news-card-body">
-                        <p class="news-date">Octobre 2023</p>
-                        <h3>Vidéo Corporate 2023</h3>
-                        <p>Découvrez notre dernière présentation corporate mettant en avant l'innovation et la croissance chez Hydro Benelux.</p>
-                        <a href="pages/news-article.html" class="btn btn-outline">Lire Plus</a>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <img src="../images/hero/hero-about.jpg" alt="Nouvelle ligne de production">
-                    <div class="news-card-body">
-                        <p class="news-date">Septembre 2023</p>
-                        <h3>Lancement d'une nouvelle ligne de production</h3>
-                        <p>Une ligne de production économe en énergie de dernière génération augmente la capacité de 30%.</p>
-                        <a href="pages/news-article.html" class="btn btn-outline">Lire Plus</a>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <img src="../images/hero/hero-water.png" alt="Efficacité énergétique">
-                    <div class="news-card-body">
-                        <p class="news-date">Août 2023</p>
-                        <h3>Initiative d'efficacité énergétique</h3>
-                        <p>Hydro Benelux s'engage vers des opérations neutres en carbone d'ici 2030.</p>
-                        <a href="pages/news-article.html" class="btn btn-outline">Lire Plus</a>
-                    </div>
-                </article>
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2>Prêt à Améliorer Votre Infrastructure ?</h2>
+            <p>Nos experts en canalisations sont là pour vous aider à trouver la solution parfaite pour votre projet</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-envelope"></i> Contacter Nos Experts
+                </a>
+                <a href="brochures.html" class="btn btn-secondary btn-lg">
+                    <i class="fas fa-download"></i> Télécharger les Catalogues
+                </a>
             </div>
-
-            <div class="text-center mt-4">
-                <a href="pages/news.html" class="btn btn-primary">Voir toutes les actualités</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== TESTIMONIALS SECTION ===== -->
-    <section class="testimonials-section">
-        <div class="testimonials-slider">
-            <div class="testimonial-slide active">
-                <span class="quote-open">"</span>
-                <p class="testimonial-text">
-                    En tant que partenaire de longue date, nous sommes très heureux de travailler avec vous et votre entreprise. Au fil des années, nous avons reçu un excellent service, des produits de grande qualité, des réponses rapides et compétentes de la part d'Hydro Benelux. Tous les employés sont réactifs, compétents et connaissent parfaitement les produits que vous fabriquez. Nous recevons toujours la bonne décision pour choisir le bon produit. Nous recommandons vivement Hydro Benelux à tous nos partenaires et clients.
+            <div class="contact-quick">
+                <p>
+                    <i class="fas fa-phone"></i> Appelez-nous: <a href="tel:+3225551234">+32 2 555 1234</a>
+                    <span class="separator">|</span>
+                    <i class="fas fa-envelope"></i> Email: <a href="mailto:info@hydrobenelux.eu">info@hydrobenelux.eu</a>
                 </p>
-                <span class="quote-close">"</span>
-                <div class="testimonial-author">
-                    <p class="author-name">Johan De Vries</p>
-                    <p class="author-position">Chef de projet, AquaNet NL</p>
-                </div>
             </div>
-
-            <div class="testimonial-slide">
-                <span class="quote-open">"</span>
-                <p class="testimonial-text">
-                    Travailler avec Hydro Benelux a été une expérience vraiment positive. Leur professionnalisme, leur attention aux détails et leur engagement à fournir des produits et services de haute qualité dépassent constamment nos attentes. L'expertise et la réactivité de l'équipe rendent chaque projet fluide et efficace, et leur dévouement à la satisfaction client est évident dans tout ce qu'ils font. Nous apprécions vraiment notre partenariat et recommandons vivement Hydro Benelux à tous ceux qui recherchent des produits et solutions fiables.
-                </p>
-                <span class="quote-close">"</span>
-                <div class="testimonial-author">
-                    <p class="author-name">Sophie Maes</p>
-                    <p class="author-position">Directrice des infrastructures, InfraBuild Belgium</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="testimonial-controls">
-            <button class="testimonial-dot active" data-slide="0"></button>
-            <button class="testimonial-dot" data-slide="1"></button>
         </div>
     </section>
 
-    <!-- ===== CONTACT CTA SECTION ===== -->
-    <section class="section-dark text-center" style="padding: 100px 0;">
+        <footer style="background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%); color: white; padding: 80px 0 0 0;">
         <div class="container">
-            <h2 style="color: white; margin-bottom: 32px;">Prenez contact : Connectez-vous avec nous aujourd'hui !</h2>
-            <a href="pages/contact.html" class="btn btn-primary btn-lg">Nous contacter</a>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer>
-        <div class="footer-accent"></div>
-        <div class="footer-container">
-            <div class="footer-content">
-                <!-- Column 1: Company Info -->
-                <div class="footer-column">
-                    <img src="../images/logo/logo.png" alt="Hydro Benelux" class="footer-logo">
-                    <div class="footer-info">
-                        <p><strong>Siège social Hydro Benelux</strong></p>
-                        <p>Avenue de l'Industrie 12<br>1000 Bruxelles, Belgique</p>
-                        <p class="footer-phone">+32 2 555 1234</p>
-                        <p class="footer-phone">+32 3 555 5678</p>
-                        <p class="footer-phone">+31 20 555 9012</p>
-                        <p class="footer-phone">+352 XX XXX XXX</p>
-                        <p class="footer-phone">+32 2 555 3456</p>
-                        <p><a href="mailto:info@hydrobenelux.eu" class="footer-email">info@hydrobenelux.eu</a></p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; margin-bottom: 50px;">
+                <div style="text-align: left;">
+                    <img src="../images/logo/logo.png" alt="Hydro Benelux" style="height: 70px; margin-bottom: 25px; display: block;">
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.6; font-size: 14px;">
+                        Premier fabricant de canalisations PE & PP dans la région Benelux. Plus de 35 ans d'excellence européenne en solutions d'infrastructure.
+                    </p>
+                </div>
+                <div style="text-align: left;">
+                    <h4 style="margin-bottom: 20px; font-size: 16px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: white;">Contact</h4>
+                    <div style="color: rgba(255,255,255,0.8); font-size: 14px; line-height: 2;">
+                        <p style="margin: 8px 0;">
+                            <i class="fas fa-map-marker-alt" style="width: 18px; color: #E63946;"></i>
+                            Avenue de l'Industrie 12<br>
+                            <span style="margin-left: 18px;">1000 Bruxelles, Belgique</span>
+                        </p>
+                        <p style="margin: 8px 0;">
+                            <i class="fas fa-phone" style="width: 18px; color: #E63946;"></i>
+                            <a href="tel:+3225551234" style="color: rgba(255,255,255,0.8); text-decoration: none;">+32 2 555 1234</a>
+                        </p>
+                        <p style="margin: 8px 0;">
+                            <i class="fas fa-envelope" style="width: 18px; color: #E63946;"></i>
+                            <a href="mailto:info@hydrobenelux.eu" style="color: rgba(255,255,255,0.8); text-decoration: none;">info@hydrobenelux.eu</a>
+                        </p>
                     </div>
                 </div>
-
-                <!-- Column 2: Quick Links -->
-                <div class="footer-column">
-                    <h4>Liens rapides</h4>
-                    <ul class="footer-links">
-                        <li><a href="pages/about.html">À Propos</a></li>
-                        <li><a href="pages/products.html">Produits</a></li>
-                        <li><a href="pages/news.html">Actualités</a></li>
-                        <li><a href="pages/contact.html">Contact</a></li>
-                    </ul>
+                <div style="text-align: left;">
+                    <h4 style="margin-bottom: 20px; font-size: 16px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: white;">Liens Rapides</h4>
+                    <div style="color: rgba(255,255,255,0.8); font-size: 14px; line-height: 2.2;">
+                        <p style="margin: 5px 0;"><a href="index.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">→ Accueil</a></p>
+                        <p style="margin: 5px 0;"><a href="brochures.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">→ Brochures</a></p>
+                        <p style="margin: 5px 0;"><a href="index.html#products" style="color: rgba(255,255,255,0.8); text-decoration: none;">→ Produits</a></p>
+                        <p style="margin: 5px 0;"><a href="contact.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">→ Contact</a></p>
+                    </div>
                 </div>
-
-                <!-- Column 3: Downloads & Legal -->
-                <div class="footer-column">
-                    <h4>Ressources</h4>
-                    <ul class="footer-links">
-                        <li><a href="pages/brochures.html">Brochures</a></li>
-                        <li><a href="pages/certificates.html">Certificats</a></li>
-                        <li><a href="pages/privacy-policy.html">Politique de confidentialité</a></li>
-                        <li><a href="pages/contact.html">Service client</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 4: Social Media -->
-                <div class="footer-column">
-                    <h4>Suivez-nous</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/hydrobenelux" target="_blank" class="social-link" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/hydrobenelux" target="_blank" class="social-link" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/hydrobenelux" target="_blank" class="social-link" aria-label="LinkedIn">
+                <div style="text-align: left;">
+                    <h4 style="margin-bottom: 20px; font-size: 16px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: white;">Suivez-Nous</h4>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="https://www.linkedin.com/company/hydrobenelux" target="_blank" style="width: 45px; height: 45px; background: rgba(255,255,255,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; text-decoration: none;" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
+                        <a href="https://www.facebook.com/hydrobenelux" target="_blank" style="width: 45px; height: 45px; background: rgba(255,255,255,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; text-decoration: none;" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/hydrobenelux" target="_blank" style="width: 45px; height: 45px; background: rgba(255,255,255,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; text-decoration: none;" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
+                    <p style="margin-top: 20px; color: rgba(255,255,255,0.6); font-size: 13px; line-height: 1.6;">
+                        Restez informé de nos derniers produits et actualités du secteur.
+                    </p>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 Hydro Benelux. Tous droits réservés.</p>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding: 25px 0; text-align: center; background: rgba(0,0,0,0.2);">
+                <p style="margin: 0; font-size: 13px; color: rgba(255,255,255,0.6);">
+                    &copy; 2025 Hydro Benelux. Tous droits réservés. | Conçu pour l'excellence en solutions de canalisations.
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- ===== BACK TO TOP BUTTON ===== -->
     <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- JavaScript -->
     <script src="../js/main.js"></script>
 
-    <!-- Hero Video Fallback Script -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const heroVideo = document.querySelector('.hero-video-container video');
+        const heroVideo = document.getElementById('heroVideo');
+        const heroVideoContainer = document.getElementById('heroVideoContainer');
+        const videoSpinner = document.querySelector('.video-loading-spinner');
 
-            if (heroVideo) {
-                // Error fallback to YouTube
-                heroVideo.addEventListener('error', function() {
-                    console.log('Video failed to load, using YouTube fallback');
-                });
+        if (heroVideo) {
+            heroVideo.addEventListener('canplay', function() {
+                if (videoSpinner) {
+                    videoSpinner.classList.add('hidden');
+                }
+            });
 
-                // Stop video at 1:56 (116 seconds)
-                heroVideo.addEventListener('timeupdate', function() {
-                    if (heroVideo.currentTime >= 116) {
-                        heroVideo.pause();
-                        heroVideo.currentTime = 116;
-                    }
-                });
+            heroVideo.addEventListener('error', function() {
+                if (videoSpinner) {
+                    videoSpinner.classList.add('hidden');
+                }
+                heroVideoContainer.innerHTML = `
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/R7b9-m_EM2s?autoplay=1&mute=1&start=0&end=116&controls=0"
+                        title="Hydro Benelux Corporate Video"
+                        frameborder="0"
+                        allow="autoplay"
+                        style="position: absolute; top: 50%; left: 50%; width: 100vw; height: 56.25vw; min-height: 100vh; min-width: 177.77vh; transform: translate(-50%, -50%); pointer-events: none;">
+                    </iframe>
+                `;
+            });
 
-                // Attempt to play
-                heroVideo.play().catch(function(error) {
-                    console.log('Autoplay prevented:', error);
-                });
-            }
-        });
+            heroVideo.addEventListener('timeupdate', function() {
+                if (heroVideo.currentTime >= 116) {
+                    heroVideo.pause();
+                    heroVideo.currentTime = 116;
+                }
+            });
+
+            heroVideo.play().catch(function() {
+                document.addEventListener('click', function() {
+                    heroVideo.play().catch(function() {});
+                }, { once: true });
+            });
+        }
     </script>
 </body>
 </html>

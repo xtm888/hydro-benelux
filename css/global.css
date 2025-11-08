@@ -5,12 +5,13 @@
 
 /* === CSS VARIABLES === */
 :root {
-  /* Primary Colors */
+  /* Primary Colors - Modern refinement */
   --primary-navy: #2C3E50;
   --accent-red: #E63946;
   --secondary-blue: #457B9D;
-  --light-bg: #F8F9FA;
+  --light-bg: #F7F9FC;
   --white: #FFFFFF;
+  --surface-white: #FAFBFC;
 
   /* Text Colors */
   --text-dark: #212529;
@@ -35,14 +36,16 @@
   --spacing-xxl: 120px;
 
   /* Border Radius */
-  --radius-sm: 5px;
-  --radius-md: 10px;
-  --radius-lg: 15px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
 
-  /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+  /* Shadows - Modern layered system */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 16px 40px rgba(0, 0, 0, 0.16), 0 8px 16px rgba(0, 0, 0, 0.12);
 
   /* Transitions */
   --transition-fast: 0.2s ease;
@@ -69,14 +72,17 @@ body {
   color: var(--text-dark);
   background-color: var(--white);
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* === TYPOGRAPHY === */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.3;
   margin-bottom: var(--spacing-md);
   color: var(--primary-navy);
+  letter-spacing: -0.02em;
 }
 
 h1 {
@@ -100,6 +106,8 @@ h4 {
 
 p {
   margin-bottom: var(--spacing-sm);
+  line-height: 1.75;
+  letter-spacing: 0.01em;
 }
 
 a {
@@ -134,7 +142,18 @@ img {
 .row {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   margin: 0 calc(var(--spacing-sm) * -1);
+  gap: 32px 0;
+}
+
+/* About section specific alignment */
+#about .row {
+  align-items: flex-start;
+}
+
+#about .col-2:last-child {
+  padding-top: 20px;
 }
 
 .col {
@@ -160,40 +179,42 @@ img {
 /* === BUTTONS === */
 .btn {
   display: inline-block;
-  padding: 14px 32px;
-  font-size: 16px;
+  padding: 16px 36px;
+  font-size: 15px;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
   border: none;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   cursor: pointer;
   transition: all var(--transition-base);
   text-decoration: none;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
+  will-change: transform;
+  box-shadow: var(--shadow-sm);
 }
 
 .btn-primary {
-  background-color: var(--accent-red);
+  background: linear-gradient(135deg, var(--accent-red), #d62839);
   color: var(--white);
 }
 
 .btn-primary:hover {
-  background-color: #d62839;
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 6px 20px rgba(230, 57, 70, 0.4);
+  background: linear-gradient(135deg, #d62839, #c71f2b);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(230, 57, 70, 0.5);
   color: var(--white);
 }
 
 .btn-secondary {
-  background-color: var(--primary-navy);
+  background: linear-gradient(135deg, var(--primary-navy), #1a252f);
   color: var(--white);
 }
 
 .btn-secondary:hover {
-  background-color: #1a252f;
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 6px 20px rgba(44, 62, 80, 0.3);
+  background: linear-gradient(135deg, #1a252f, #0f1820);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(44, 62, 80, 0.4);
   color: var(--white);
 }
 
@@ -201,13 +222,14 @@ img {
   background-color: transparent;
   border: 2px solid var(--primary-navy);
   color: var(--primary-navy);
+  box-shadow: none;
 }
 
 .btn-outline:hover {
-  background-color: var(--primary-navy);
+  background: linear-gradient(135deg, var(--primary-navy), #1a252f);
   color: var(--white);
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 6px 20px rgba(44, 62, 80, 0.3);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.35);
 }
 
 .btn-lg {
@@ -217,7 +239,7 @@ img {
 
 /* === SECTION STYLING === */
 section {
-  padding: var(--spacing-xl) 0;
+  padding: 100px 0;
 }
 
 .section-title {
@@ -234,9 +256,10 @@ section {
   content: '';
   position: absolute;
   top: 50%;
-  width: 80px;
-  height: 3px;
-  background-color: var(--accent-red);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-red), var(--secondary-blue));
+  border-radius: 2px;
 }
 
 .section-title::before {
@@ -250,10 +273,11 @@ section {
 .section-subtitle {
   text-align: center;
   color: var(--text-light);
-  font-size: 18px;
+  font-size: 17px;
   margin-bottom: var(--spacing-lg);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
 }
 
 .section-dark {
@@ -267,16 +291,19 @@ section {
 
 /* === CARDS === */
 .card {
-  background-color: var(--white);
-  border-radius: var(--radius-sm);
+  background-color: var(--surface-white);
+  border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   overflow: hidden;
   transition: all var(--transition-base);
+  will-change: transform;
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(69, 123, 157, 0.1);
 }
 
 .card-img {
